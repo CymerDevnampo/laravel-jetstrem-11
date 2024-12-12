@@ -17,4 +17,4 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('posts', Posts::class)->middleware('auth');
+Route::get('posts', Posts::class)->name('show.post')->middleware('auth');
